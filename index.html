@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is this device by size</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #264653;
+        }
+        header {
+            background-color: #2a9d8f;
+            height: 30vh;
+            display: flex;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+        }
+        header h1 {
+            color: #fff;
+        }
+        main {
+            color: #fff;
+            padding: 20px 0;
+        }
+        main h1 {
+            font-size: 24px;
+        }
+
+        /* Center the text vertically and horizontally in main */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 33vh); /* Adjusted for header height */
+        }
+        footer{
+            background-color: #2a9d8f;
+            height: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .phone,.ipad{
+            display: none;
+        }
+        @media (max-width:480px) {
+            .pc{
+                display: none;
+            }
+            .phone{
+                display: block;
+            }
+            main{
+                background-color: #00b4d8;
+            }
+        }
+        @media (max-width: 1024px) and (min-width: 481px){
+            .pc{
+                display: none;
+            }
+            .ipad{
+                display: block;
+            }
+            main{
+                background-color: #0077b6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>What is this device by size</h1>
+    </header>
+    <main>
+        <h1 class="pc">This is Computer</h1>
+        <h1 class="phone">This is Phone</h1>
+        <h1 class="ipad">This is Tablet or ipad</h1>
+    </main>
+    <footer>&copy; Ali Elsayed</a></footer>
+</body>
+</html>
